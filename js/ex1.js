@@ -1,17 +1,10 @@
-let userInput = prompt("Please enter a number: ");
-let num1 = Number.parseInt(userInput);
+let userInput = prompt("Please enter a number between 1 and 100: ");
 
-let userInput = prompt("Please enter another number: ");
-let num2 = Number.parseInt(userInput);
+let number = Number.parseInt(userInput);
 
-let userInput = prompt("Please enter a mathematical operator (+, -, *, /): ");
-let op = userInput;
-
-if (!num1.isNaN(num1) && !num2.isNaN(num2))
+if (!Number.isNaN(number) && Number.isInteger(number) >= 1 && number <= 100)
 {
-  if (op === '+') {
-    alert
-  }
+  console.log("Thank you! You entered " + number + ", a valid number.")
 } else {
   console.log("Sorry, " + userInput + " is not a valid entry.")
 }
